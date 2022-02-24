@@ -1,6 +1,10 @@
+import {ButtonComponent} from './Components/Button/Button'
+
 const App = () =>{
   return(
-    <div>Patrick</div>
+    <div>
+      <ButtonComponent/>
+    </div>
   )
 }
 
