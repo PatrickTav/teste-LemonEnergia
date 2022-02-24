@@ -5,18 +5,21 @@ const theme = {
     primary: {
         default: '#026C00',
         hover: '#079504',
-        active:'#013C00'
+        active: '#013C00',
     },
-    secondary:{
-        default:'#F7C346',
-        hover:'#FFDF77',
-        active:'#DCAC0D'
-
+    secondary: {
+        default: '#F7C346',
+        hover: '#FFDF77',
+        active: '#DCAC0D',
     }
 }
+const icons ={
+    
+}
 
-
+// As props estão sendo passadas por um Objeto com propriedades tornando mais dinâmico
 export const Button = styled.button`
+    box-sizing: border-box;
     background-color:${props => theme[props.theme].default};
     min-width: 311px;
     height: 56px;
@@ -32,7 +35,11 @@ export const Button = styled.button`
         transition: ease background-color 250ms;
     }
     &:active{
-        background-color: ${props=>theme[props.theme].active};
+        background-color: ${props => theme[props.theme].active};
+    }
+    &:disabled{
+        cursor: default;
+        background-color: #B7D0B6;
     }
 `
 

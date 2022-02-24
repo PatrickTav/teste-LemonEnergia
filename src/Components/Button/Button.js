@@ -11,6 +11,9 @@ export const ButtonComponent = ()=>{
             <Button 
             theme='secondary'
             >Text</Button>
+            <Button 
+            disabled
+            >Text</Button>
         </>
     )
 }
