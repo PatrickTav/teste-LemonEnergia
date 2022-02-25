@@ -1,4 +1,6 @@
 import { Button } from "./style"
+import {HiOutlineRefresh, HiOutlineCheck,HiOutlineArrowRight } from 'react-icons/hi'
+
 export const ButtonComponent = (props) => {
     return (
         <>
@@ -6,8 +8,9 @@ export const ButtonComponent = (props) => {
         entretanto, o primary é a cor padrão. Se tirar, vai continuar verde 
         */}
             <Button
-                theme={props.theme}
-            >{props.text}</Button>
+             theme={props.theme}>
+             {props.text}
+             </Button>
         </>
     )
 }

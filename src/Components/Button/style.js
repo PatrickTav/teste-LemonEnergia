@@ -13,13 +13,12 @@ const theme = {
         active: '#DCAC0D',
     },
     disable: {
-        cursor: 'default',
         default: '#B7D0B6'
     }
 }
 
 // As props estão sendo passadas por um Objeto com propriedades tornando mais dinâmico
-export const Button = styled.div`
+export const Button = styled.button`
     box-sizing: border-box;
     background-color:${props => theme[props.theme].default};
     min-width: 311px;
@@ -31,14 +30,12 @@ export const Button = styled.div`
     border: none;
     margin: 5px;
     cursor: pointer;
-    display: flex;
     align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding:0px 18px ;
     
-    span{
-        
-        float: right;
-        margin-right:18px ;
-    }
+    
 
         &:hover{
             background-color: ${props => theme[props.theme].hover};
@@ -48,7 +45,7 @@ export const Button = styled.div`
             background-color: ${props => theme[props.theme].active};
         }
         &:disabled{
-            cursor: ${props => theme[props.theme].cursor};
+            cursor:default;
             background-color:${props => theme[props.theme].default} ;
         }
         
