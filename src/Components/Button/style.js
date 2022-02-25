@@ -53,7 +53,7 @@ export const Button = styled.div`
         }
         
 
-        
+         
 `
 // Criando a cor padrão do componente 
 Button.defaultProps = {
