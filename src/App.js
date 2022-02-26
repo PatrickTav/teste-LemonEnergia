@@ -6,6 +6,7 @@ import '../src/style.css'
 const App = () => {
 	// Usando states (opcional) que fiz para poder trocar dinâmicamente o estado
 	const [properties, setProperties] = useState('primary')
+	const [ icon, setIcon] = useState('arrow')
 
 	// Função para que ao clicar troque o Tema 
 	const handleChangeTheme = () => {
@@ -20,6 +21,9 @@ const App = () => {
 	const handleChangeDisable = () => {
 		setProperties('disable')
 	}
+	const handleIcons = ()=>{
+		setIcon('check')
+	}
 
 	return (
 		<div className='container'>
@@ -29,12 +33,14 @@ const App = () => {
 
 				<ButtonComponent
 					theme={properties}
-					text='Text' /> <br />
+					
+					text='Text' /> 
+				
+				<button onClick={handleIcons}>arrow </button><br />
 
-				<button >none </button><br />
-				<button >arrow-right </button><br />
-				<button >check</button><br />
-				<button >refresh </button><br />
+
+
+
 			</div>
 		</div>
 	)
