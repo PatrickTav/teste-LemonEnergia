@@ -3,7 +3,7 @@
 
 
 # A aplicação contém uma página que está no ar
-O objetivo do teste é desenolver um botão com estilizações de `hover`,  `active` e `disable`
+O objetivo do teste é desenvolver um botão com estilizações de `hover`,  `active` e `disable`
 
 ## Por questão de facilidade
 Foi desenvolvido funcionalidades na página que facilitam o teste, tais como:
