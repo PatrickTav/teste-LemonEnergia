@@ -30,12 +30,15 @@ export const Button = styled.button`
     border: none;
     margin: 5px;
     cursor: pointer;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding:0px 18px ;
     
     
+    
+    &.display{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0px 18px ;
+    }
 
         &:hover{
             background-color: ${props => theme[props.theme].hover};
@@ -45,7 +48,7 @@ export const Button = styled.button`
             background-color: ${props => theme[props.theme].active};
         }
         &:disabled{
-            cursor:default;
+            cursor:none;
             background-color:${props => theme[props.theme].default} ;
         }
         
