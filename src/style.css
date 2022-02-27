@@ -11,3 +11,23 @@
     margin: auto;
     text-align: center;
 }
+.cont-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cont-buttons button{
+    margin: 0 5px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+    background-color: transparent;
+}
+.cont-buttons button:hover{
+    background-color: rgb(152, 152, 152);
+    transition: ease background-color 250ms;
+}
+.cont-buttons button:active{
+    background-color: rgb(116, 114, 114);
+    color: #FFF;
+}

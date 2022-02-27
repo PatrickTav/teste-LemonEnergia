@@ -24,17 +24,20 @@ const App = () => {
   return (
     <div className="container">
       <div className="content">
-        <button onClick={handleChangeTheme}>Change Color </button>
-        <br />
-        <button onClick={handleChangeDisable}>Disable </button>
-        <br />
-        <div>
-          {iconsProps.map((icon) => (
-            <button onClick={() => handleIcon(icon)} key={icon}>
-              {icon}
-            </button>
-          ))}
+        <div className="cont-buttons">
+          <button onClick={handleChangeTheme}>Change Color </button>
+
+          <button onClick={handleChangeDisable}>Disable </button>
+          
+          <div>
+            {iconsProps.map((icon) => (
+              <button onClick={() => handleIcon(icon)} key={icon}>
+                {icon}
+              </button>
+            ))}
+          </div>
         </div>
+  {/* Componente */}
         <ButtonComponent icons={icon} theme={properties} text="Text" />
       </div>
     </div>
