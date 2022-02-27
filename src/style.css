@@ -21,7 +21,7 @@
     font-weight: 600;
     border-radius: 10px;
     border: 1px solid #CCC;
-    background-color: transparent;
+    background-color: rgb(206, 203, 203);
 }
 .cont-buttons button:hover{
     background-color: rgb(152, 152, 152);
